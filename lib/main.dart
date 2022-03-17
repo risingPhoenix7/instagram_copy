@@ -16,6 +16,7 @@ class Home extends StatelessWidget {
         bottom: false,
         child: Scaffold(
           backgroundColor: Colors.black,
+          //Title, add button and messenger in AppBar
           appBar: AppBar(
             foregroundColor: Colors.white,
             backgroundColor: Colors.black,
@@ -94,7 +95,7 @@ class Home extends StatelessWidget {
               SizedBox(
                 height: 10,
               ),
-              //First line of post
+              //First line of post, contains dp of poster, name and 3 dots
               Row(children: <Widget>[
                 ElevatedButton.icon(
                   onPressed: () {
@@ -134,6 +135,7 @@ class Home extends StatelessWidget {
               Image.asset(
                 'images/memes.png',
               ),
+              //Next row contains all possible reactions to the post
               Row(children: <Widget>[
                 IconButton(
                   icon: Icon(Icons.favorite_border_outlined,
@@ -166,9 +168,10 @@ class Home extends StatelessWidget {
                   },
                 )
               ]),
-
+              //no. of likes
               Text('  1,16,360 likes',
                   style: TextStyle(color: Colors.white, fontSize: 18)),
+              //poster's description
               Row(
                 children: [
                   Text('  memes',
@@ -180,6 +183,7 @@ class Home extends StatelessWidget {
                       style: TextStyle(color: Colors.white, fontSize: 18))
                 ],
               ),
+              //button that shows comments
               TextButton(
                 onPressed: () {
                   print('View comments');
@@ -190,6 +194,7 @@ class Home extends StatelessWidget {
                 child: Text('View all 404 comments',
                     style: TextStyle(color: Colors.grey, fontSize: 17)),
               ),
+              //User to comment here
               Row(
                 children: <Widget>[
                   ElevatedButton.icon(
@@ -226,6 +231,7 @@ class Home extends StatelessWidget {
               ),
             ]),
           ),
+          //Bottom navigationBar to contain 5 other windows
           bottomNavigationBar: BottomNavigationBar(
             type: BottomNavigationBarType.fixed,
             showSelectedLabels: false,
