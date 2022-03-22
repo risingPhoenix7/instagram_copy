@@ -5,7 +5,7 @@ import 'package:instagram_copy/view/post.dart';
 import 'package:instagram_copy/view/story.dart';
 
 void main() {
-  runApp(MaterialApp(home: Home()));
+  runApp(MaterialApp(home: Home(),));
 }
 
 //to create this type stless and itll autofill, just type the name and put the class name as home:classname() in main, return scaffold
